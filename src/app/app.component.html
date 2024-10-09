@@ -63,9 +63,9 @@
           <div class="frame-4">
             @if(playGame){
               <app-board [playGame]="playGame" (playGameChange)="onPlayGameChange($event)"
-              (scoreEmit)="onScoreChange($event)"></app-board>
+              (scoreEmit)="onScoreChange($event)" ></app-board>
             } @else if (playGame == false) {
-              <app-gameover></app-gameover>
+              <app-gameover [score]="score" ></app-gameover>
             }
           </div>
         </div>
@@ -73,6 +73,22 @@
     </div>
   </div>
   <div class="box-5">
+    <div class="arrows-1">
+      <div class="arrow-up" (click)="moveUp()">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="arrow-left" (click)="moveLeft()">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <div class="mountain-1">
       <div></div>
       <div></div>
@@ -133,6 +149,24 @@
       <div></div>
       <div></div>
     </div>
+    <div class="arrows-2">
+      <div class="arrow-right" (click)="moveRight()">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="arrow-down" (click)="moveDown()">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+    </div>
+
   </div>
   <div class="box-6">
     <div class="grass-1"></div>

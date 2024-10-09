@@ -17,6 +17,11 @@
   font-size: 60px;
   animation: blinkZoom 1s infinite;
 }
+
+.congrats {
+text-align: center;
+padding-bottom: 15px;
+}
 @keyframes blinkZoom {
   0% {
     opacity: 1;

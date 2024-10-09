@@ -14,6 +14,8 @@ export class BoardComponent implements OnInit, AfterViewInit{
 @Output() scoreEmit = new EventEmitter <number>();
 @Input() playGame: boolean | undefined;
 
+
+
   @ViewChild('board', { static: false }) canvasRef!: ElementRef<HTMLCanvasElement>;
   private ctx!: CanvasRenderingContext2D;
   cellSize: number = 20;
@@ -24,6 +26,7 @@ export class BoardComponent implements OnInit, AfterViewInit{
   private intervalId: any;
   private snake!: SnakeComponent;
   private food!: FoodComponent;
+  directionChange: any;
 
   ngOnInit(): void {
     this.setBoardDimensions();
@@ -34,9 +37,9 @@ export class BoardComponent implements OnInit, AfterViewInit{
   }
 
   private setBoardDimensions(): void {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 768) {
       this.cellSize = 12;
-      this.rows = 18;
+      this.rows = 26;
       this.cols = 18;
     } else {
       this.cellSize = 18;
@@ -128,6 +131,24 @@ export class BoardComponent implements OnInit, AfterViewInit{
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     switch (event.key) {
+      case 'ArrowUp':
+        this.snake.setDirection({ row: -1, col: 0 });
+        break;
+      case 'ArrowDown':
+        this.snake.setDirection({ row: 1, col: 0 });
+        break;
+      case 'ArrowLeft':
+        this.snake.setDirection({ row: 0, col: -1 });
+        break;
+      case 'ArrowRight':
+        this.snake.setDirection({ row: 0, col: 1 });
+        break;
+    }
+  }
+
+  @HostListener('click')
+  handleMobileControl(){
+    switch (this.directionChange) {
       case 'ArrowUp':
         this.snake.setDirection({ row: -1, col: 0 });
         break;

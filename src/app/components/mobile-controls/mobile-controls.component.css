@@ -1,0 +1,19 @@
+.box {
+  display: grid;
+  grid-template-columns: (2, 64px);
+  grid-template-rows: (2, 64px);
+}
+.arrow-up {
+  grid-row: 1;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: (5, 8px);
+  grid-template-rows: (5, 8px);
+}
+
+.arrow-up div:nth-child(1){
+  background-color: #45603C;
+  box-shadow: 5px 5px 10px #45603c94;
+  grid-row: 1/6;
+  grid-column: 3;
+}

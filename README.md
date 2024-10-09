@@ -9,7 +9,9 @@ Este proyecto es una implementación del juego clásico Snake desarrollado en An
 - Controles suaves: Movimiento de la serpiente fluido con las teclas de flecha.
 - Velocidad progresiva: A medida que avanzas, la serpiente aumenta su velocidad.
 - Contador de puntuación en tiempo real: Visualiza la puntuación acumulada en la interfaz.
+- Historial de récords: El juego muestra tu récord personal y te felicita cuando logras superar tu mejor puntuación.
 - Reinicio rápido: Juega una y otra vez con reinicios rápidos.
+- Diseño responsive: La aplicación se adapta a diferentes tamaños de pantalla.
 - Estilo visual retro: Inspirado en los primeros videojuegos de consola y arcade.
 
 # INSTALACIÓN
