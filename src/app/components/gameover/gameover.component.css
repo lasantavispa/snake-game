@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.game-over{
+  text-align: center;
+  font-size: 70px;
+  animation: blinkZoom 1s infinite;
+}
+@keyframes blinkZoom {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2); 
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); 
+  }
+}
+
+  @media (max-width: 768px) {
+    .dead-snake{
+      width: 70vw;
+    }
+
+  }
+ @media (min-width: 768px) {
+  .dead-snake{
+    height: 70vh;
+  }
+
+ }

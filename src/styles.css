@@ -1,0 +1,12 @@
+:root{
+  background-color: #819545;
+  color-scheme: #819545;
+  font-family: "Tiny5", sans-serif;
+  color: #45603C;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

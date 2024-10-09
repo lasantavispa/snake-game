@@ -1,0 +1,149 @@
+<div class="body">
+  <div class="box-1">
+    <h1 class="h1">SNAKE GAME</h1>
+  </div>
+  <div class="box-2">
+    <div class="cloud">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="cloud">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="box-3">
+    <div class="pole-1">
+      <div class="square-border-1"></div>
+      <div class="square-border-2"></div>
+    </div>
+  </div>
+  <div class="box-4">
+    <div class="frame-1">
+      <div class="frame-2">
+        <div class="frame-3">
+          <div class="frame-4">
+            @if(playGame){
+              <app-board [playGame]="playGame" (playGameChange)="onPlayGameChange($event)"
+              (scoreEmit)="onScoreChange($event)"></app-board>
+            } @else if (playGame == false) {
+              <app-gameover></app-gameover>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-5">
+    <div class="mountain-1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="pole-2">
+      <div class="square-border-1"></div>
+      <div class="square-border-2"></div>
+    </div>
+    <div class="mountain-2"></div>
+    <div class="mountain-1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="box-6">
+    <div class="grass-1"></div>
+    <div class="grass-2"></div>
+    <div class="grass-3"></div>
+    <div class="score-board">
+      <h2>Score: {{ score }}</h2>
+      <button class="restart-button" (click)="restartGame()">RESTART</button>
+    </div>
+  </div>
+
+
+
+</div>

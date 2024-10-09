@@ -1,0 +1,8 @@
+
+#board {
+  /* background-color: #95a85ac2; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
