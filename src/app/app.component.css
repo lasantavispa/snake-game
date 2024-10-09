@@ -1,23 +1,10 @@
-.h1{
-  text-align: center;
-  font-size: 50px !important;
-  letter-spacing: 15px;
-  text-shadow: 5px 5px 10px #45603c94;
-
-}
-.box-2 {
+.body {
   display: flex;
-  padding-left: 50px;
-  padding-right: 100px;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
-.cloud {
-  margin-top: -80px;
-  display: grid;
-  grid-template-columns: repeat(30, 8px);
-  grid-template-rows: repeat(10, 8px);
-}
-
 @media (max-width: 768px) {
   .cloud {
     margin-top: 0;
@@ -25,7 +12,40 @@
     z-index: -10;
     left: -150px;
   }
+  .h1 {
+    font-size: 20px !important;
+    letter-spacing: 10px !important;
+  }
 }
+.box-1 {
+  padding: 30px;
+}
+.h1{
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 15px;
+  text-shadow: 5px 5px 10px #45603c94;
+
+}
+.box-2 {
+  width: 100vw;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 100px;
+  justify-content: space-between;
+
+}
+.cloud {
+  /* margin-top: -80px; */
+  display: grid;
+  grid-template-columns: repeat(30, 8px);
+  grid-template-rows: repeat(10, 8px);
+  margin-top: -60px;
+  overflow-x: hidden;
+
+}
+
+
 
 .cloud div:nth-child(1) {
   background-color: #45603C;
@@ -232,10 +252,8 @@
 
 
 .box-4{
-  width: 100vw;
   display: flex;
   justify-content: center;
-
 }
 .frame-1{
   width: fit-content;
@@ -288,6 +306,7 @@
 }
 
 .box-5 {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -308,6 +327,7 @@
   grid-template-columns: repeat(20, 8px);
   grid-template-rows: repeat(7, 8px);
   padding-left: 50px;
+  overflow: hidden;
 }
 
 .mountain-1 div:nth-child(1){
@@ -510,6 +530,7 @@
 
 .box-6{
   border-top: 16px solid #45603C;
+  width: 100vw;
 }
 
 .grass-1 {

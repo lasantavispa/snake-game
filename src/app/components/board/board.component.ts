@@ -35,7 +35,7 @@ export class BoardComponent implements OnInit, AfterViewInit{
 
   private setBoardDimensions(): void {
     if (window.innerWidth < 600) {
-      this.cellSize = 18;
+      this.cellSize = 12;
       this.rows = 18;
       this.cols = 18;
     } else {
