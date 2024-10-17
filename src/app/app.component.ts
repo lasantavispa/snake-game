@@ -15,7 +15,7 @@ export class AppComponent {
   @Output() directionChange = new EventEmitter <string>();
   @ViewChild(BoardComponent) boardComponent!: BoardComponent;
 
-  playGame = false;
+  playGame = true;
   score: any;
 
 
@@ -35,7 +35,7 @@ export class AppComponent {
 
   moveUp() {
     this.directionChange.emit('ArrowUp');
-    this.boardComponent.directionChange = 'ArrowUp';  
+    this.boardComponent.directionChange = 'ArrowUp';
     this.boardComponent.handleMobileControl();
   }
 
